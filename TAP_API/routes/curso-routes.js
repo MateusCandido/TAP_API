@@ -7,7 +7,8 @@ const CursoController = require('../CursoController.js');
 router.get("/", CursoController.listarCursoJson);
 
 module.exports = router
-
+//cadastro usuário
+router.post('/', CursoController.litaUsuario);
 // app.get('localhost:3000/cursos', async (req, res) => {
 //     //Query Function
 //   const courses = "Uma lista de cursos";/*await courseModel.find({});*/

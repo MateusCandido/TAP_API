@@ -20,5 +20,12 @@ class CursoController{
         cursoModel.create(req.body)
         res.send('Cadastro realizado com sucesso')
     }
+    static async litaUsuario (req,res){
+        var user = {
+            "email" : "virmerson@ucdb.br",
+            "senha" : "123456"
+        }
+        res.json(user);
+    }
 }
 module.exports = CursoController
